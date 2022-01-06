@@ -1,0 +1,30 @@
+<%- include('header.ejs') %>
+
+<!-- posts -->
+<% data.forEach((post)=>{ %>
+<div class="home-post-container">
+    <h4 class="post-heading"><%=post.blogTitle %></h4>
+    <p class="post-preview"><%= post.blogPost.substring(0,99) %>
+    <form action="delete" method="post">
+      <input type="hidden" name="deleteID" value="<%= post._id %>">
+      <button class="btn btn-outline-danger" type="submit">...delete</button>
+    </form>
+    </p>
+</div>
+<%})%>
+
+
+
+
+
+
+
+
+
+
+
+<!-- bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+<%- include('footer.ejs') %>
+</html>

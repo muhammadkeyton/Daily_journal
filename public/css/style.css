@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --body-color:#121212;
+    --common-padding:1rem 1.7rem;
+}
+
+
+body{
+    font-family: 'Fira Sans', sans-serif;
+    background-color:var(--body-color);
+    color:#fff;
+}
+
+
+/* nav bar spacings */
+
+/* .navbar{
+    background-color: var(--navbar-color;
+} */
+
+.home-post-container{
+    padding:var(--common-padding);
+    margin-top: 25px;
+}
+.navbar-brand{
+    margin-left:1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.collapse{
+    margin-right:1rem;
+}
+
+.nav-item{
+    margin:0 1rem;
+}
+
+.post-container{
+    padding:0 2rem;
+    margin-left:1.7rem;
+    margin-top: 2rem;
+}
+
+.post-heading{
+    font-weight: 400;
+    margin-bottom:20px;
+}
+
+.post-preview{
+    font-weight: 200;
+}
+
+.form-container{
+    padding:var(--common-padding);
+}
+
+.about-container{
+    padding:var(--common-padding);
+}
+
+footer{
+  margin:40px auto 20px;
+  text-align: center;
+}
